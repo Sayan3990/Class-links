@@ -2,15 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="classlink.png">
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
-    <title> My Classes </title>
+    <title> Class links </title>
   </head>
   <body>
     <div class="class_links">
-      <h1>Class Links</h1>
-      <p class = "info"> Green coloured links are active. </p>
+      <i><h1><a href="https://sayan3990.github.io/My_Class_links/">CLASS LINKS</a></h1></i>
       <ul>
         <li><h3><a class="Active" href="https://us02web.zoom.us/j/6121567310?pwd=R3FNRVRhdmsySjBwb3ZoM1cvZVhoQT09">DBMS - Amiya Ranjan Sir</a></h3></li>
         <li><h3><a class="Active" href="https://meet.google.com/lookup/eq6pgerwtd?authuser=0&hs=179">WT - Nalini Ma'am</a></h3></li>
@@ -26,40 +24,78 @@
     * {
       padding: 0;
     }
+
     body {
       width : 100%;
-      background-color: #ffff88;
+      background-color: aliceblue;
     }
-      a:hover {
-      color: red;
-      }
+
     .class_links {
       width: 100%;
       text-align: center;
     }
+
+    .class_links i {
+      width: 100%;
+    }
+    
     .class_links ul li h3 a {
       text-decoration: none;
-      font-size: 20px;
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
     .class_links ul li {
-      list-style: none;
+      list-style: disc;
     }
-    .class_links h1 {
-      top: 0%;
-      width: 100%;;
-      padding: 12px;
-      text-decoration: underline;
-      font-size: 45px;
-      color: #fff;
-      background-color: #7300e6;
+
+    .class_links i h1{
+      line-height: 45px;
+      text-align: center;
+      width: 100%;
     }
-    .info {
-      background-color: #008000;
-      font-size: 24px;
-      color: #fff;
+
+    .class_links i h1 a{
+      padding: 0 25%;
+      background-color: blueviolet;
+      border: #1a0263 solid 7px;
+      top: 0;
+      border-radius: 15px;
+      width: 100%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: none;
+      font-size: 32px;
+      color: azure;
     }
+
     .Active {
-     color: #00802b;
+     color: #1a0263;
+    }
+    .Active:hover {
+      color: #ad0309;
+    }
+
+    @media only screen and (min-width: 900px) {
+      .class_links {
+        text-align: left;
+      }
+      .class_links ul li {
+      list-style: disc;
+      }
+      .class_links ul {
+        padding-left: 100px;
+      }
+      .class_links i h1{
+      line-height: 65px;
+    }
+
+    .class_links ul li h3 a {
+      font-size: 24px;
+    }
+    .class_links i h1 a{
+      font-size: 48px;
+    }
+      
     }
     </style>
 
