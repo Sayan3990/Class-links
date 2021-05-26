@@ -1,3 +1,3 @@
 # Class-links
 
-[Class-links](https://sayan3990.github.io/Class-links/)
+[My Class inks](https://sayan3990.github.io/Class-links/)
