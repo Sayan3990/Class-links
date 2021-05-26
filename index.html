@@ -35,8 +35,6 @@
       <div class="class_links">
         <p id="greet" ></p>
         <div class="list">
-          
-        </div>
         <ul>
           <h1>5th SEM</h1>
           <li><h3><a class="Active" href="" target="_blank">DAA</a></h3></li>
@@ -57,9 +55,9 @@
 
         if (hrs < 12)
             greet = 'Morning';
-        else if (hrs >= 12 && hrs < 17)
+        else if (hrs >= 12 && hrs < 18)
             greet = 'Afternoon';
-        else if (hrs >= 17 && hrs <= 24)
+        else if (hrs >= 18 && hrs <= 24)
             greet = 'Evening';
         
         document.getElementById('greet').innerHTML = 'Good ' + greet;
@@ -97,7 +95,6 @@
     }
 
     .class_links ul li h3 a {
-      background-color: white;
       text-decoration: none;
       font-size: 26px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -122,6 +119,14 @@
     .Active:hover {
       color: whitesmoke;
       background-color: #1a0263;
+    }
+
+     .Myclassdiv {
+       background-color: aqua;
+    }
+
+    .list {
+      backdrop-filter: blur(10px); 
     }
     </style>
 
