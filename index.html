@@ -34,40 +34,31 @@
     </css-doodle>
       <div class="class_links">
         <p id="greet" ></p>
-        <div class="list">
-        <ul>
-          <h1>5th SEM</h1>
-          <li>
-            <table>
-              <tr>
-                <td>
-                  <h3><a class="Active" href="" target="_blank">DAA</a></h3>
-                </td>
-                <td>
-                  <h3><a class="Active" href="" target="_blank">CN</a></h3>
-                </td>
-                <td>
-                  <h3><a class="Active" href="" target="_blank">HPCA</a></h3>
-                </td>
-              </tr>
-            </table>
-          </li>
-          <li>
-            <table>
-              <tr>
-                <td>
-                  <h3><a class="Active" href="" target="_blank">SE</a></h3>
-                </td>
-                <td>
-                  <h3><a class="Active" href="" target="_blank">BD</a></h3>
-                </td>
-                <td>
-                  <h3><a class="Active" href="" target="_blank">AI</a></h3>
-                </td>
-              </tr>
-            </table>
-          </li>
-        </ul>
+        <h1>5th SEM</h1>
+          <table>
+            <tr>
+              <td>
+                <h3><a class="Active" href="" target="_blank">DAA</a></h3>
+              </td>
+              <td>
+                <h3><a class="Active" href="" target="_blank">CN</a></h3>
+              </td>
+              <td>
+                <h3><a class="Active" href="" target="_blank">HPCA</a></h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><a class="Active" href="" target="_blank">SE</a></h3>
+              </td>
+              <td>
+                <h3><a class="Active" href="" target="_blank">BD</a></h3>
+              </td>
+              <td>
+                <h3><a class="Active" href="" target="_blank">AI</a></h3>
+              </td>
+            </tr>
+          </table>
       </div>
     </div>
 
@@ -83,7 +74,6 @@
             greet = 'Afternoon';
         else if (hrs >= 18 && hrs <= 24)
             greet = 'Evening';
-        
         document.getElementById('greet').innerHTML = 'Good ' + greet;
 
     </script>
@@ -111,47 +101,21 @@
 
     .class_links {
       text-align: center;
+      width: 80%;
+      margin: 0 10%;
+    }
+    .class_links h1 {
+      font-size: 32px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    table {
+      background-color: aliceblue;
       width: 100%;
     }
-
-    .class_links ul li {
-      list-style: none;
+    td {
+      font-size: 1.2rem;
     }
 
-    .class_links ul li h3 a {
-      text-decoration: none;
-      font-size: 26px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-   
-    .class_links ul h1 {
-      font-size: 32px;
-      text-decoration: underline;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    .class_links ul h1:nth-child(1) {
-      color: violet;
-      -webkit-text-stroke: 1px #03a9f4;
-    }
-
-    .Active {
-      border-radius: 8px;
-      padding: 5px 10px;
-      color: #1a0263;
-    }
-    .Active:hover {
-      color: whitesmoke;
-      background-color: #1a0263;
-    }
-
-     .Myclassdiv {
-       background-color: aqua;
-    }
-
-    .list {
-      backdrop-filter: blur(10px); 
-    }
     </style>
 
   </body>
