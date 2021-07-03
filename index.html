@@ -35,7 +35,7 @@
       <div class="class_links">
         <p id="greet" ></p>
         <h1>5th SEM</h1>
-          <table>
+          <table border>
             <tr>
               <td>
                 <h3><a class="Active" href="" target="_blank">DAA - Biswajit Sir</a></h3>
@@ -115,11 +115,31 @@
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
     table {
+      overflow: scroll;
       background-color: aliceblue;
       width: 100%;
     }
     td {
       font-size: 1.2rem;
+    }
+      
+    a {
+      text-decoration:none;
+    }
+
+    a:hover {
+      color: blueviolet;
+      text-decoration: underline;
+    }
+    .Active {
+      color: green;
+    }
+
+    @media (max-width: 900px) {
+      .class_links {
+        width: 100%;
+        margin: 0;
+      }
     }
 
     </style>
